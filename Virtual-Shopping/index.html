@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Shopping</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="./images/logoShop.png" alt="">
+            <div>
+                <img onclick="showCart(this)" class="cart" src="./images/cart.png" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Add to Cart</h3>
+                <div class="card-items">
+                   
+                </div>
+                <h2>Total: $<strong class="price-total">0</strong></h2>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class=" row card px-2 py-3 products">
+            <div class="carts">
+                <div>
+                    <img src="./images/products/aspiradora.jpg" alt="Aspiradora Robot">
+                    <p><span>800</span>$</p>
+                </div>
+                <p class="title">Aspiradora Robot</p>
+                <a href="" data-id="1" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/celular.jpg" alt="Celular Motorola Moto E20">
+                    <p><span>135</span>$</p>
+                </div>
+                <p class="title"> Celular Motorola moto E20</p>
+                <a href="" class="btn-add-cart" data-id="2">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/tablet.jpg" alt="Ipad Pro Max 11 de 2 TB">
+                    <p><span>350.50</span>$</p>
+                </div>
+                <p class="title">iPad Pro 11 - 2TB - Gris</p>
+                <a href="" data-id="3" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/TV-portatil.jpg" alt="Tv portatil y Radio">
+                    <p><span>50.20</span>$</p>
+                </div>
+                <p class="title"> Tv Portatil y Radio</p>
+                <a href="" data-id="4" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/keyboard.jpg" alt="Teclado Metálico Gaming RGB">
+                    <p><span>19</span>$</p>
+                </div>
+                <p class="title">Teclado Gaming RGB</p>
+                <a href="" data-id="5" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/lapicera.jpg" alt="Lapicera traductora">
+                    <p><span>1500</span>$</p>
+                </div>
+                <p class="title"> Lapicera Traductor</p>
+                <a href="" data-id="6" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/auriculares.jpg" alt="Auriculares Gamer">
+                    <p><span>89.99</span>$</p>
+                </div>
+                <p class="title"> Auriculares Rojo y Negro</p>
+                <a href="" data-id="7" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/joystick.jpg" alt="Joystick negro de Play Station 5">
+                    <p><span>50</span>$</p>
+                </div>
+                <p class="title">Joystick de Play Station 5</p>
+                <a href="" data-id="8" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/play5.jpg" alt="Play station 5 de color blanca">
+                    <p><span>160</span>$</p>
+                </div>
+                <p class="title">Play Station 5</p>
+                <a href="" data-id="9" class="btn-add-cart">add to cart</a>
+            </div>            
+        </div>
+    </section>
+
+     <footer>
+    <div class="container">
+      <p>&copy; 2023 All rights reserved</p>
+    </div>
+  </footer>
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="./custom.js" ></script>
+</body>
+</html>
